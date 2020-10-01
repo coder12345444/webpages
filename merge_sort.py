@@ -24,6 +24,11 @@ def mergeSort(arr):
 			arr[k] = t1[i] 
 			i+=1
 			k+=1
+			
+		while i<len(t1)
+		arr[k]=t1[i]
+		i+=1
+		k+1
 		
 		
 
