@@ -1,0 +1,170 @@
+<!--HTML5 declaration -->
+<!DOCTYPE>
+<html>
+<head>
+<!-- All Meta tags -->
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1"> 
+	<title>Navigation Bar</title>
+	<!-- Bootstrap CSS and other CSS files-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" ></link>
+<!-- Bootstrap JS and other JS files-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+</head>
+<body style="background-color:pink;"> 
+<div class="container-fluid">
+ <div class="row">
+    <div class="col-md-12"><h1 class="text-center">ABES Engineering College</h1>
+	</div>
+ </div>
+ 
+ <!-- Designing Navigation bar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a href= "#" class="navbar-brand"><img src="logo2.png" height="50" width="150"></a>
+  <a href="#" class="navbar-brand text-white">DataRitz Technology</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#" class="navbar-brand text-Primary">Welcome, Anand Srivastava</a>
+  
+  <!--collapse menu in mobile-->
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+  <span class="navbar-toggler-icon"></span></button>
+    
+	<!-- Designing list of navbar - Menu-->
+	<div id="menu" class="collapse navbar-collapse">
+	<ul class="navbar-nav ml-auto">
+	  <li class="nav-item"><a href="#" class="nav-link">Home |&nbsp;&nbsp;</a></li>
+	  <li class="nav-item"><a href="#" class="nav-link">Profile |&nbsp;&nbsp;</a></li>
+	  <li class="nav-item"><a href="#" class="nav-link">Change Password |&nbsp;&nbsp; </a></li>
+	  <li class="nav-item"><a href="#" class="nav-link">Logout &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+	</ul>
+	</div>
+  </nav>
+  <!-- navigattion bar end-->
+  
+ <!-- page coontent start-->
+ <div class="row">
+ <div class="col-2"></div>
+ <div class="col-8">
+ <h1> Registration Form</h1>
+  <form>
+     <div class="form-group">
+	 <label >Full Name </label>
+	 <input type="text" class= "form-control" name="name" id="name" placeholder="Full Name">
+     </div>
+	 
+	 <!-- creating form row -->
+	 <div class="form-row">
+	     		 <div class="form-group col-md-6">
+				  
+	 <label >E-Mail </label>
+	 <input type="email" class= "form-control" name="e-mail" id="email" placeholder="E-Mail">
+     </div>
+	 
+	 <div class="form-group col-6">
+	 <label >Password</label>
+	 <input type="password" class= "form-control" name="pass" id="pass" placeholder="Password">
+     </div>
+	 </div>
+	 
+	 <div class="form-group">
+	 <label>Office Address</label>
+	 <input type="text" name="offadd" id="offadd" class="form-control" placeholder="Office Address">
+	 </div>
+	 
+	 <div class="form-group">
+	 <label>Residential Address</label>
+	 <input type="text" name="resadd" id="resadd" class="form-control" placeholder="Residential Address">
+	 </div>
+ 
+    <!-- form row start course and Gender-->
+	 <div class="form-row">
+	  <div class="col-md-6 form-group">
+	      Courses:&nbsp;&nbsp;
+	    <!-- check box -->
+	    <div class="form-check-inline">
+		   <input type="checkbox" name="course" id="course" class="form-check-input">
+		   <label class="form-check-label">PHP</label>
+	   </div>
+	   <div class="form-check-inline">
+		   <input type="checkbox" name="course" id="course" class="form-check-input">
+		   <label class="form-check-label">JSP</label>
+	   </div>
+	   <div class="form-check-inline">
+		   <input type="checkbox" name="course" id="course" class="form-check-input">
+		   <label class="form-check-label">C++</label>
+	   </div>  
+	  </div>
+	  <div class="col-md-6 form-group">
+	     Gender:&nbsp;&nbsp;
+	  <!-- radio Button-->
+	   <div class="form-check-inline">
+	       <input type="radio" name="gen" id="gen" class="form-check-input">
+		   <label class="form-check-label"> Male</label>
+		   </div>
+		   
+		<div class="form-check-inline">
+		   <input type="radio" class="form-check-input" name="gen">
+		   <label class="form-check-label" >Female</label>
+		</div>
+	  </div>
+	 </div>
+	 
+	 <!-- form row end course and Gender-->
+ 
+     <!-- Form row for city, state and zip -->
+	 <div class="form-row">
+	  <div class="col-6 form-group">
+	  
+	 <label>City</label>
+	 <input type="" name="city" id="city" class="form-control" placeholder="">
+	 </div>
+	  
+	 
+	  <div class="col-4 form-group">
+	  <!-- dropdown for state-->
+	     <label>State</label>
+	     <select class="form-control" name="state" id="state">
+		    <option selected>Choose..</option>
+			<option>UP</option>
+			<option>haryana</option>
+	     </select>
+	  </div>
+	  <div class="col-2 form-group">
+	  
+	 <label>Zip</label>
+	 <input type="text" name="zip" id="zip" class="form-control" placeholder="">
+	 </div>
+	 </div>
+	 <!-- state, city and zip row close-->
+	 
+     <button type="" class="btn bg-success">Register</button>
+ </form>
+ </div>
+ 
+ <div class="col-2"></div>
+ 
+</div>
+ 
+ 
+ <!-- page coontent start-->
+ <!-- footer start-->
+ <footer>
+   <div class="row bg-dark text-white text-center">
+       <div class="col-md-12">
+	     Copyright @ DataRitz -2020
+	   </div>
+   </div>
+ </footer>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+<div class="col-md-">
+<img src="" class="img-fluid">
+</div>
